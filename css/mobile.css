@@ -53,9 +53,9 @@ table {
 */
 
 body {
-	width: 320px;
+	width: 300px;
 	background-color: #F7E094;
-	padding: 10px;
+	padding: 5px;
 }
 
 header .logo {
@@ -83,6 +83,7 @@ nav ul li {
 	padding: 5px;
 	margin-bottom: 1px;
 	background-color: #395774;
+	width: 100%;
 }
 
 nav ul li a {
@@ -91,10 +92,8 @@ nav ul li a {
 }
 
 .find-us {
-	background-color: #F79B6F;
-	border: 1px solid #9B4015;
 	color: #103B65;
-	width: 308px;
+	width: 298px;
 	padding: 5px;
 	margin-bottom: 5px;
 }
@@ -102,6 +101,11 @@ nav ul li a {
 .find-us span {
 	display: block;
 	width: 250px;
+}
+
+.find-us .map {
+	float:	right;
+	width: 50px;
 }
 
 .find-us .address {

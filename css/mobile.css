@@ -59,6 +59,15 @@ body {
 	color: #103B65;
 }
 
+h1 {
+    font-size: 18pt;
+    margin-top: 15px;
+}
+
+p {
+	margin: 10px 0px;
+}
+
 header .logo {
 	display: block;
     text-align: center;
@@ -84,8 +93,8 @@ nav ul li {
 	padding: 5px;
 	margin-bottom: 5px;
 	background-color: #395774;
-	width: 130px;
-	float: left;
+	width: 128px;
+	display: inline-block;
 	margin-right: 10px;
 }
 

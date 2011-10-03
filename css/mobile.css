@@ -71,11 +71,22 @@ header .logo span {
 }
 
 nav {
-	float: right;
+	
+}
+
+nav ul li {
+	text-align: center;
+	padding: 5px;
+	margin-bottom: 1px;
+	background-color: #395774;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: #F7D76F;
 }
 
 .find-us {
-	float: left;
 	width: 300px;
 	padding: 5px;
 }

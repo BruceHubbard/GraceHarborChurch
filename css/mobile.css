@@ -103,11 +103,23 @@ nav ul li a {
 	color: #F7D76F;
 }
 
+footer {
+	margin-top: 5px;
+	padding-top: 5px;
+	border-top: 1px solid #000000;
+}
+
+footer span {
+	float: right;
+	font-size: 7pt;
+}
+
 .find-us {
 	color: #103B65;
 	width: 298px;
 	padding: 5px;
 	margin-bottom: 5px;
+	border-bottom: 1px solid #000000;
 }
 
 .find-us span {

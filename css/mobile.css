@@ -53,17 +53,21 @@ table {
 */
 
 body {
-	width: 300px;
+	width: 320px;
 	background-color: #F7E094;
 	padding: 10px;
 }
 
 header .logo {
-	
+	display: block;
+    text-align: center;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #000000;
+	margin-bottom: 5px;
 }
 
 header .logo img {
-	width: 300px;
+	width: 200px;
 }
 
 header .logo span {
@@ -87,8 +91,21 @@ nav ul li a {
 }
 
 .find-us {
-	width: 300px;
+	background-color: #F79B6F;
+	border: 1px solid #9B4015;
+	color: #103B65;
+	width: 308px;
 	padding: 5px;
+	margin-bottom: 5px;
+}
+
+.find-us span {
+	display: block;
+	width: 250px;
+}
+
+.find-us .address {
+	margin-top: 5px;
 }
 
 .wrapper .fb-like-box {

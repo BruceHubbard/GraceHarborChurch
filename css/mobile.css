@@ -53,9 +53,8 @@ table {
 */
 
 body {
-	width: 300px;
-	background-color: #F7E094;
 	color: #103B65;
+	background: url("../images/backgrounds/linen.jpg") repeat scroll left top #ECE8D3;
 }
 
 h1 {
@@ -73,8 +72,11 @@ a {
 }
 
 .wrapper {
+	width: 300px;
 	position: relative;
 	padding: 5px;
+	text-align: left;
+	margin: 0 auto;
 }
 
 header {
@@ -160,15 +162,6 @@ footer span {
 }
 
 @media screen and (min-width: 321px) {
-	body {
-		width: 470px;
-		float: left;
-	}
-	
-	.wrapper {
-		float: left;
-	}
-	
 	header {
 		float: left;
 		height: 67px;
@@ -185,6 +178,10 @@ footer span {
 	header .logo span {
 		display: block;
 		font-size: 4.2pt;
+	}
+	
+	.wrapper {
+		width: 470px;
 	}
 
 	nav {

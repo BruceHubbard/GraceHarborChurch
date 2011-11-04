@@ -1,0 +1,302 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* 
+	END RESET CSS
+*/
+
+body {
+	color: #103B65;
+	background: url("../images/backgrounds/linen.jpg") repeat scroll left top #ECE8D3;
+}
+
+h1 {
+    font-size: 18pt;
+    margin-top: 15px;
+}
+
+p {
+	margin: 10px 0px;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.wrapper {
+	width: 300px;
+	position: relative;
+	padding: 0;
+	text-align: left;
+	margin: 0 auto;
+}
+
+header {
+	padding-bottom: 5px;
+	border-bottom: 1px solid #000000;
+	margin-bottom: 5px;
+}
+
+header .logo {
+	display: inline-block;
+    text-align: center;
+}
+
+header .logo img {
+	width: 100px;
+}
+
+header .logo span {
+	display: none;
+	font-size: 5.5pt;
+    margin-left: 5px;
+}
+
+nav {
+	
+}
+
+nav ul li {
+	text-align: center;
+	padding: 5px;
+	margin-bottom: 5px;
+	background-color: #395774;
+	width: 128px;
+	display: inline-block;
+	margin-right: 10px;
+	 border-radius: 6px;
+}
+
+nav ul li a {
+	color: #F7D76F;
+}
+
+footer {
+	margin-top: 5px;
+	padding-top: 5px;
+	border-top: 1px solid #000000;
+	float: left;
+	width: 98%;
+}
+
+footer span {
+	float: right;
+	font-size: 7pt;
+}
+
+.find-us {
+	color: #103B65;
+	width: 98%;
+	padding: 5px;
+	margin-bottom: 5px;
+	border-bottom: 1px solid #000000;
+}
+
+.find-us span {
+	display: block;
+	width: 250px;
+}
+
+.map {
+	float:	right;
+	width: 50px;
+	height: 50px;
+	background-image: url(../images/maps.png);
+	margin-right: 10px;
+}
+
+.find-us .address {
+	margin-top: 5px;
+}
+
+.wrapper .fb-like-box {
+	display: none;
+}
+
+header {
+	float: left;
+	height: 67px;
+}
+
+header .logo {
+    text-align: left;
+}
+
+header .logo img {
+	width: 150px;
+}
+
+header .logo span {
+	display: block;
+	font-size: 4.2pt;
+}
+
+.wrapper {
+	width: 470px;
+}
+
+nav {
+	float: left;
+	width: 137px;
+	margin-top: 5px;
+}
+
+nav ul li {
+	width: 117px;
+}
+
+.main-content {
+	float: right;
+	width: 313px;
+}
+
+.find-us {
+	margin: none;
+	float: left;
+	width: 240px;
+	padding-left: 40px;
+	font-size: 9pt;
+}
+
+.find-us .map {
+	float: left;
+	background-repeat: no-repeat;
+	margin-left: 15px;
+	width: 50px;
+}
+
+.find-us .time {
+	margin-top: 5px;
+}
+
+.main-content h1 {
+	margin-top: 5px;
+}
+
+@media screen and (min-width: 960px) {
+	body {
+		width: 100%;
+	}
+	
+	.wrapper {
+		width: 960px;
+	}
+	
+	header {
+		height: auto;
+		border: none;
+		width: 100%;
+		background-color: black;
+	}
+	
+	header .logo {
+		float: left;
+		margin-right: 40px;
+	}
+	
+	header .logo img {
+	    width: 150px;
+	}
+	
+	header .logo span {
+    	font-size: 8pt;
+	    font-weight: bold;
+		display: none;
+	}
+	
+	nav {
+		width: auto;
+		margin: 0;
+		float: right;
+	}
+	
+	nav ul li {
+		font-size: 8pt;
+	    width: auto;
+		margin-right: -4px;
+		border-radius: 0;
+		border-right: 1px solid #000000;
+		background: none;
+		padding: 5px 9px;
+	}
+	
+	nav ul li:hover {
+		background-color: #395774;
+	}
+	
+	nav ul li a {
+		color: #103B65;
+	}
+	
+	nav ul li:hover a {
+		color: #F7D76F;
+	}
+	
+	.wrapper .fb-like-box {
+		display: none;
+	}
+	
+	.find-us {
+		padding-left: 0;
+		border: none;
+	}
+	
+	.main-content {
+		float: right;
+		width: 515px;
+	}
+	
+	.side {
+		float: left;
+		width: 240px;
+		margin-right: 20px;
+	}
+}

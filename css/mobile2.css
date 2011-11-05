@@ -234,7 +234,10 @@ nav ul li {
 		height: auto;
 		border: none;
 		width: 100%;
-		background-color: black;
+		/* Fallback for web browsers that doesn't support RGBa */
+		background: none;
+		/* RGBa with 0.6 opacity */
+		background: rgba(0, 0, 0, 0.8);
 	}
 	
 	header .logo {
@@ -243,7 +246,7 @@ nav ul li {
 	}
 	
 	header .logo img {
-	    width: 150px;
+	    width: 120px;
 	}
 	
 	header .logo span {
@@ -273,7 +276,8 @@ nav ul li {
 	}
 	
 	nav ul li a {
-		color: #103B65;
+		color: white;
+		font-size: 11pt;
 	}
 	
 	nav ul li:hover a {

@@ -1,6 +1,11 @@
 <html>
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		
+		<link rel="stylesheet" href="css2/flexslider/flexslider.css" type="text/css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+		<script src="js/jquery.flexslider-min.js"></script>
+
 		<link href="css2/style.css" rel="stylesheet">
 	</head>
 	<body>
@@ -47,14 +52,26 @@
 		</header>
 		<div class="clear"></div>
 		<div class="wrapper">
+			<div class="flexslider">
+				<ul class="slides">
+					<li><img src="images/maps.png" /></li>
+					<li>
+						<h1>Welcome!</h1>
+						<p>Imagine.......in the midst of our busy and less than perfect lives, being able to encounter God each day in a meaningful and life changing way.  Yet getting from 'here to there' seems so complicated and hard to reach.</p>
+					</li>
+				</ul>
+			</div>
 			<div class="main-content">
-				<h1>Welcome!</h1>
-				<p>Imagine.......in the midst of our busy and less than perfect lives, being able to encounter God each day in a meaningful and life changing way.  Yet getting from 'here to there' seems so complicated and hard to reach.</p>
 				<p>At Grace Harbor Community Church, we believe in a basic approach to church and to life - one that starts by simply helping people to get to know and experience God personally!  Want to know how to simply live closely with God?</p>
 			</div>
 			<footer>
 				<span>Part of Great Commission Churches</span>
 			</footer>
 		</div>
+		<script>
+			$(window).load(function() {
+		    	$('.flexslider').flexslider();
+		  	});
+		</script>
 	</body>
 </html>

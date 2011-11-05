@@ -104,6 +104,7 @@ nav ul {
 	width: 110px;
 	margin-right: 10px;
 	margin-top: 5px;
+	cursor: pointer;
 }
 
 .find-us .details {
@@ -123,5 +124,9 @@ nav ul {
 	height: 35px;
 	background-image: url(../images/maps_small.png);
 	float: left;
+}
+
+.flexslider {
+	margin-bottom: 35px;
 }
 

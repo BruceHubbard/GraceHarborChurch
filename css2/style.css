@@ -1,3 +1,5 @@
+/* Resets */
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -52,6 +54,9 @@ table {
 	END RESET CSS
 */
 
+
+/* Structure */
+
 body {
 	color: #103B65;
 	background: url("../images/backgrounds/linen.jpg") repeat scroll left top #ECE8D3;
@@ -99,34 +104,91 @@ nav ul {
 	display: none;
 }
 
+/* Global elements */
+
 .find-us {
 	float: right;
 	width: 110px;
 	margin-right: 10px;
 	margin-top: 5px;
-	cursor: pointer;
+	position: relative;
 }
 
 .find-us .details {
 	display: none;
+	color: white;
+	width: 300px;
+	padding: 10px;
+	position: absolute;
+	top: 48px;
+	right: -15px;
+    z-index: 3000;
+	background: rgba(0, 0, 0, 0.8);
 }
 
-.find-us .short-details {
-	width: 60px;
-	float: right;
-	color: #BB621E;
-	font-size: 10pt;
-	margin-top: 5px;
+.find-us .icon {
+	width: 35px;
+	height: 48px;
+	float: left;
+	cursor: pointer;
+	margin-bottom: -5px;
 }
 
 .find-us .map {
-	width: 35px;
-	height: 35px;
-	background-image: url(../images/maps_small.png);
-	float: left;
+}
+
+.find-us .facebook {
+	background-image: url(../images/facebook_icon_small.jpg);
+	margin-left: 15px;
+}
+
+.find-us .facebook .details {
+	z-index: 2999;
+	min-height: 100px;
+}
+
+.find-us .facebook .fb-like-box {
+	background-color: white;
 }
 
 .flexslider {
 	margin-bottom: 35px;
 }
+
+.slides li {
+	height: 150px;
+	overflow-y: hidden;
+}
+
+.slides .text {
+	padding: 10px;
+	font-size: 9pt;
+}
+
+.slides h1 {
+	font-weight: bold;
+	font-size: 18pt;
+	width: 95%;
+}
+
+.slides p {
+	margin: 6px 0;
+    text-indent: 15px;
+    width: 95%;
+}
+
+.slides p.first {
+	text-indent: 0px;
+}
+
+/* Visual media */
+
+/* Article structure */
+
+/* Forms */
+
+/* Tables */
+
+/* Reusable */
+
 

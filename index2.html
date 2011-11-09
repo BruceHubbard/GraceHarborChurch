@@ -8,6 +8,15 @@
 		<script src="js/jquery.flexslider-min.js"></script>
 		<script>
 			$(document).ready(function() {
+				$('.find-us .icon .close').click(function(e) {
+					e.preventDefault();
+					var icon = $(this).parents('.icon');
+					icon.data('collapsing', true);
+					icon.find('ul').slideUp(function() {
+						icon.data('collapsing', false);
+					})
+				});
+				
 				$(".find-us .icon").hover(function(){
 					if($(this).data('collapsing') != true) {
 						$(this).find('ul').slideDown();
@@ -66,6 +75,7 @@
 						</a>
 						<ul class="details">
 							<li>
+								<a href="#" class="close">X</a>
 								<span class="time">Join Us Sunday mornings at 10am:</span>
 								<span class="address">
 									<span>7667 Summerlin Blvd</span>
@@ -80,6 +90,7 @@
 						</a>
 						<ul class="details">
 							<li>
+								<a href="#" class="close">X</a>
 								<div class="fb-like-box" 
 									data-href="https://www.facebook.com/pages/Grace-Harbor-Community-Church/125807960814688" 
 									data-width="300" 

@@ -131,6 +131,19 @@ footer {
 	background: rgba(0, 0, 0, 0.8);
 }
 
+.find-us .details li {
+	position: relative;
+}
+
+.find-us .details li .close {
+	position: absolute;
+	right: 5px;
+	top: 5px;
+	border: 1px #FFFFFF solid;
+	z-index: 5000;
+	background-color: white;
+}
+
 .find-us .icon {
 	width: 35px;
 	height: 48px;

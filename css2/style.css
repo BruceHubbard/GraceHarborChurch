@@ -104,6 +104,11 @@ nav ul {
 	display: none;
 }
 
+footer {
+	font-size: 7pt;
+	text-align: right;
+}
+
 /* Global elements */
 
 .find-us {

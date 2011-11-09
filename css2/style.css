@@ -138,12 +138,10 @@ nav ul {
 }
 
 .find-us .facebook {
-	background-image: url(../images/facebook_icon_small.jpg);
 	margin-left: 15px;
 }
 
 .find-us .facebook .details {
-	z-index: 2999;
 	min-height: 100px;
 }
 

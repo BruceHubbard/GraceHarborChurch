@@ -5,7 +5,7 @@
 		<link rel="stylesheet" href="css2/flexslider/flexslider.css" type="text/css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
-		<script src="js/jquery.flexslider-min.js"></script>
+		<script src="js/slides.min.jquery.js"></script>
 		<script>
 			$(document).ready(function() {
 				$('.find-us .icon .close').click(function(e) {
@@ -16,7 +16,7 @@
 						icon.data('collapsing', false);
 					})
 				});
-				
+/*				
 				$(".find-us .icon").hover(function(){
 					if($(this).data('collapsing') != true) {
 						$(this).find('ul').slideDown();
@@ -28,7 +28,8 @@
 						icon.data('collapsing', false);
 					});
 			    });
-			
+*/
+/*			
 				$('.find-us .icon.facebook').hover(function() {
 					(function(d, s, id) {
 					  var js, fjs = d.getElementsByTagName(s)[0];
@@ -38,6 +39,7 @@
 					  fjs.parentNode.insertBefore(js, fjs);
 					}(document, 'script', 'facebook-jssdk'));
 				});
+*/
 			});
 		</script>
 		<link href="css2/style.css" rel="stylesheet">
@@ -106,15 +108,20 @@
 		<div class="clear"></div>
 		<div class="wrapper">
 			<div class="main-content">
-				<div class="flexslider">
-					<ul class="slides">
-						<li class="text">
-							<h1>Welcome!</h1>
-							<p class="first">Imagine.......in the midst of our busy and less than perfect lives, being able to encounter God each day in a meaningful and life changing way.  Yet getting from 'here to there' seems so complicated and hard to reach.</p>
-							<p>At Grace Harbor Community Church, we believe in a basic approach to church and to life - one that starts by simply helping people to get to know and experience God personally!  Want to know how to simply live closely with God?</p>
-						</li>
-						<li><img src="images/slideshow/banner_crLove.png" /></li>
-					</ul>
+				<div class="slider-container">
+					<div class="slideshow">
+						<div class="slides_container">
+							<div class="slide text">
+								<h1>Welcome!</h1>
+								<p class="first">Imagine.......in the midst of our busy and less than perfect lives, being able to encounter God each day in a meaningful and life changing way.  Yet getting from 'here to there' seems so complicated and hard to reach.</p>
+								<p>At Grace Harbor Community Church, we believe in a basic approach to church and to life - one that starts by simply helping people to get to know and experience God personally!  Want to know how to simply live closely with God?</p>
+							</div>
+							<div class="slide img"><img src="images/slideshow/banner_crLove.png" /></div>
+						</div>
+						<a href="#" class="prev"><img src="images/arrow-prev.png" width="24" height="43" alt="Arrow Prev"></a>
+						<a href="#" class="next"><img src="images/arrow-next.png" width="24" height="43" alt="Arrow Next"></a>
+					</div>
+					<img class="frame" alt="Example Frame" src="images/example-frame.png">
 				</div>
 			</div>
 			<footer>
@@ -123,7 +130,9 @@
 		</div>
 		<script>
 			$(window).load(function() {
-		    	$('.flexslider').flexslider();
+		    	$('.slideshow').slides({
+					play: 5000
+				});
 		  	});
 		</script>
 	</body>

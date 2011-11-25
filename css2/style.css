@@ -107,6 +107,7 @@ nav ul {
 footer {
 	font-size: 7pt;
 	text-align: right;
+	margin-top: 20px;
 }
 
 /* Global elements */
@@ -168,7 +169,7 @@ footer {
 }
 
 .slider-container {
-	width: 250px;
+	width: 270px;
 	position: relative;
 	margin: 0 auto;
 }
@@ -192,25 +193,26 @@ footer {
 	width: 244px;
 	height: 160px;
 	overflow: hidden;
+	padding: 10px;
+	background-color: white;
 }
 
 .slider-container .prev {
     position: absolute;
-	left: -32px;
-    top: 65px;
+	left: -24px;
+    top: 75px;
 	z-index: 1001;
 }
 
 .slider-container .next {
     position: absolute;
-	right: -26px;
-    top: 65px;	
+	right: -18px;
+    top: 75px;	
 	z-index: 1001;
 }
 
 .slider-container .pagination {
-	z-index: 1002;
-	margin-top: 20px;
+	display: none;
 }
 
 .slide li {
@@ -222,7 +224,6 @@ footer {
 	padding: 10px;
 	font-size: 8pt;
 	text-align: justify;
-	width: 224px;
 }
 
 .slide.img img {

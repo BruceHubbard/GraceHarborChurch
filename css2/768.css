@@ -1,0 +1,14 @@
+.wrapper {
+	max-width: 768px;
+	width: 100%;
+}
+
+footer {
+	font-size: 7pt;
+}
+
+.find-us {
+	float: left;
+	margin-left: 5%;
+	margin-top: 15px;
+}

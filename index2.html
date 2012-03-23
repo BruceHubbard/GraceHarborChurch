@@ -6,43 +6,8 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
 		<script src="js/slides.min.jquery.js"></script>
-		<script>
-			$(document).ready(function() {
-				$('.find-us .icon .close').click(function(e) {
-					e.preventDefault();
-					var icon = $(this).parents('.icon');
-					icon.data('collapsing', true);
-					icon.find('ul').slideUp(function() {
-						icon.data('collapsing', false);
-					})
-				});
-/*				
-				$(".find-us .icon").hover(function(){
-					if($(this).data('collapsing') != true) {
-						$(this).find('ul').slideDown();
-					}
-			    }, function(){
-					var icon = $(this);
-					icon.data('collapsing', true);
-					icon.find('ul').slideUp(function() {
-						icon.data('collapsing', false);
-					});
-			    });
-*/
-/*			
-				$('.find-us .icon.facebook').hover(function() {
-					(function(d, s, id) {
-					  var js, fjs = d.getElementsByTagName(s)[0];
-					  if (d.getElementById(id)) {return;}
-					  js = d.createElement(s); js.id = id;
-					  js.src = "https://connect.facebook.net/en_US/all.js#xfbml=1";
-					  fjs.parentNode.insertBefore(js, fjs);
-					}(document, 'script', 'facebook-jssdk'));
-				});
-*/
-			});
-		</script>
-		<link href="css2/style.css" rel="stylesheet">
+		<link rel="stylesheet" href="css2/style.css">
+	  	<link rel="stylesheet" media="only screen and (min-width: 481px)" href="css2/768.css?v=1">
 	</head>
 	<body>
 		<header>

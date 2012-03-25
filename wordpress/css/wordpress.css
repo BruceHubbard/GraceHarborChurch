@@ -570,7 +570,7 @@ footer {
 		position: absolute;
 		width: 223px;
 		top: 67px;
-		left: 0px;
+		right: 0px;
 		padding: 8px;
 		
 		background: transparent url(./images/backgrounds/bg-trans.png) 0 0 repeat;

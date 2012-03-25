@@ -517,6 +517,12 @@ footer {
 }
 
 @media screen and (min-width: 550px) {
+	body {
+		background-image: url("images/backgrounds/water2.jpg");
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+	}
+	
 	#page-wrap {
 		max-width: 978px;
 	}

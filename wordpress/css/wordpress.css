@@ -510,13 +510,17 @@ footer {
 }
 
 @media screen and (min-width: 465px) {
-	header .time {
+	header div.time {
 		display: block;
 		float: left;
 		width: 178px;
 		color: white;
 		font-size: 7.5pt;
 		margin-top: 6px;
+	}
+	
+	header div.time .time {
+		display: block;
 	}
 }
 
@@ -532,7 +536,9 @@ footer {
 	}
 	
 	body > #page-wrap {
-		margin-top: 110px;
+		margin-top: 120px;
+		background-color: rgba(255, 255, 255, 0.45);
+		border-radius: 10px;
 	}
 	
 	header {
@@ -543,6 +549,7 @@ footer {
 	header.sub-header {
 		position: fixed;
 		top: 71px;
+		display: block;
 	}
 	
 	header #page-wrap {

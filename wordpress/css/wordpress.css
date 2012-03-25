@@ -521,6 +521,11 @@ footer {
 		max-width: 978px;
 	}
 	
+	header#sub-header {
+		background-image: none;
+		background-color: transparent;
+	}
+	
 	header #page-wrap {
 		padding: 0;
 	}
@@ -542,7 +547,7 @@ footer {
 		float: left;
 		position: relative;
 		z-index: 20;
-		padding: 12px 0;
+		padding: 0;
 		border-right: dotted 1px rgba(255, 255, 255, .1);
 		border-left: dotted 1px rgba(0, 0, 0, .3);
 	}
@@ -569,7 +574,7 @@ footer {
 		display: none;
 		position: absolute;
 		width: 223px;
-		top: 67px;
+		top: 39px;
 		right: 0px;
 		padding: 8px;
 		
@@ -598,13 +603,14 @@ footer {
 	}
 
 	header .find-us {
-		float: left;
+		float: right;
 		margin-top: 17px;
 		margin-left: 25px;
 	}
 	
-	header .time {
-		display: none;
+	header div.time {
+		float: left;
+		margin-left: 20%;
 	}
 	
 }

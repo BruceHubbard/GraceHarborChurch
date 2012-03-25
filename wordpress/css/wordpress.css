@@ -242,6 +242,7 @@ ol.commentlist li.thread-odd {}
 body {
 	color: #103B65;
 	background: url("./images/backgrounds/linen.jpg") repeat scroll left top #ECE8D3;
+	background-size: 100%;
 }
 
 .clear {
@@ -505,5 +506,82 @@ footer {
 		font-size: 7.5pt;
 		margin-top: 9px;
 	}
+}
+
+@media screen and (min-width: 550px) {
+	#page-wrap {
+		max-width: 978px;
+	}
+	
+	header nav {
+		width: auto;
+		float: right;
+		margin-top: 13px;
+	}
+	
+	header nav ul {
+		display: block;
+	}
+	
+	header nav .menu-item {
+		float: left;
+		position: relative;
+		z-index: 20;
+	}
+	
+	header nav .menu-item a {
+		color:	white;
+		height: 40px;
+		display: block;
+		padding: 0 21px;
+		text-decoration: none;
+		text-align: center;
+		line-height: 40px;
+		outline: none;
+		z-index: 35;
+		position: relative;
+		float: left;
+	}
+	
+	header nav .menu-item:hover > .sub-menu {
+		display: block;
+	}
+	
+	header nav .sub-menu {
+		display: none;
+		position: absolute;
+		width: 223px;
+		top: 40px;
+		left: 0px;
+		padding: 8px;
+		
+		background: transparent url(./images/backgrounds/bg-trans.png) 0 0 repeat;
+		border: 1px solid #333;
+		border-top: none;
+	}
+	
+	header nav .sub-menu .menu-item {
+		background-color: #FFFFFF;
+		width: 100%;
+	}
+
+	header nav .sub-menu .menu-item a {
+		color: #000;
+	}
+	
+	header nav select {
+		display: none;
+	}
+
+	header .find-us {
+		float: left;
+		margin-top: 17px;
+		margin-left: 25px;
+	}
+	
+	header .time {
+		display: none;
+	}
+	
 }
 

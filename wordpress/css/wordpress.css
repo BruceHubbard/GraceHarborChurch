@@ -509,10 +509,10 @@ footer {
 	header .time {
 		display: block;
 		float: left;
-		width: 165px;
+		width: 210px;
 		color: white;
-		font-size: 7.5pt;
-		margin-top: 9px;
+		font-size: 9.5pt;
+		margin-top: 6px;
 	}
 }
 

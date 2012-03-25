@@ -527,9 +527,18 @@ footer {
 		max-width: 978px;
 	}
 	
-	header#sub-header {
-		background-image: none;
-		background-color: transparent;
+	body > #page-wrap {
+		margin-top: 110px;
+	}
+	
+	header {
+		position: fixed;
+		top: 0;
+	}
+	
+	header.sub-header {
+		position: fixed;
+		top: 71px;
 	}
 	
 	header #page-wrap {

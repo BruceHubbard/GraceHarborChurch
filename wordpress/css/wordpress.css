@@ -258,10 +258,18 @@ body {
 header {
 	width: 100%;
 	float: left;
-	/* Fallback for web browsers that doesn't support RGBa */
-	background: none;
-	/* RGBa with 0.6 opacity */
-	background: rgba(0, 0, 0, 0.8);
+	
+	background: #343333;
+	background-image: linear-gradient(bottom, #3D3D3D 0%, #525252 100%);
+	background-image: -o-linear-gradient(bottom, #3D3D3D 0%, #525252 100%);
+	background-image: -moz-linear-gradient(bottom, #3D3D3D 0%, #525252 100%);  
+	background-image: -webkit-linear-gradient(bottom, #3D3D3D 0%, #525252 100%);
+	background-image: -ms-linear-gradient(bottom, #3D3D3D 0%, #525252 100%);
+	background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0, #3D3D3D), color-stop(1, #525252) );
+}
+
+header .texture {
+	background-image: url(images/backgrounds/dark-texture.png);
 }
 
 header .logo {
@@ -513,10 +521,13 @@ footer {
 		max-width: 978px;
 	}
 	
+	header #page-wrap {
+		padding: 0;
+	}
+	
 	header nav {
 		width: auto;
 		float: right;
-		margin-top: 13px;
 	}
 	
 	header nav ul {
@@ -527,6 +538,9 @@ footer {
 		float: left;
 		position: relative;
 		z-index: 20;
+		padding: 12px 0;
+		border-right: dotted 1px rgba(255, 255, 255, .1);
+		border-left: dotted 1px rgba(0, 0, 0, .3);
 	}
 	
 	header nav .menu-item a {
@@ -551,7 +565,7 @@ footer {
 		display: none;
 		position: absolute;
 		width: 223px;
-		top: 40px;
+		top: 64px;
 		left: 0px;
 		padding: 8px;
 		
@@ -563,6 +577,12 @@ footer {
 	header nav .sub-menu .menu-item {
 		background-color: #FFFFFF;
 		width: 100%;
+		padding: 0;
+	}
+	
+	header nav .sub-menu .menu-item:hover {
+		background-color: #DDD;
+		cursor: pointer;
 	}
 
 	header nav .sub-menu .menu-item a {

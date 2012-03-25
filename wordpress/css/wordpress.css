@@ -613,5 +613,10 @@ footer {
 		margin-left: 20%;
 	}
 	
+	footer {
+		font-size: 9pt;
+		font-weight: bold;
+	}
+	
 }
 

@@ -525,6 +525,10 @@ footer {
 		padding: 0;
 	}
 	
+	header .texture {
+		padding: 3px;
+	}
+	
 	header nav {
 		width: auto;
 		float: right;
@@ -565,7 +569,7 @@ footer {
 		display: none;
 		position: absolute;
 		width: 223px;
-		top: 64px;
+		top: 67px;
 		left: 0px;
 		padding: 8px;
 		

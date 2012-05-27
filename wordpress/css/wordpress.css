@@ -647,14 +647,13 @@ footer {
 	}
 
 	header .find-us {
-		float: right;
+		float: left;
 		margin-top: 17px;
 		margin-left: 25px;
 	}
 	
 	header div.time {
-		float: left;
-		margin-left: 20%;
+		float: right;
 		display: block;
 		width: 210px;
 		color: white;

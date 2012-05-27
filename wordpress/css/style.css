@@ -254,7 +254,7 @@ body {
 	padding: 5px;
 }
 
-header#header {
+header {
 	width: 100%;
 	float: left;
 	
@@ -562,12 +562,6 @@ footer {
 		position: fixed;
 		top: 71px;
 		display: block;
-		width: 100%;
-	}
-	
-	header.sub-header #page-wrap {
-		text-align: center;
-		position: relative;
 	}
 	
 	header #page-wrap {
@@ -580,9 +574,7 @@ footer {
 	
 	header nav {
 		width: auto;
-		float: none;
-		display: inline-block;
-		margin: 0 auto;
+		float: right;
 	}
 	
 	header nav ul {
@@ -590,14 +582,16 @@ footer {
 	}
 	
 	header nav .menu-item {
-		display: inline-block;
+		float: left;
+		position: relative;
 		z-index: 20;
 		padding: 0;
+		border-right: dotted 1px rgba(255, 255, 255, .1);
+		border-left: dotted 1px rgba(0, 0, 0, .3);
 	}
 	
 	header nav .menu-item a {
-		color:	black;
-		font-size: 18px;
+		color:	white;
 		height: 40px;
 		display: block;
 		padding: 0 21px;
@@ -617,7 +611,7 @@ footer {
 	header nav .sub-menu {
 		display: none;
 		position: absolute;
-		width: 100%;
+		width: 223px;
 		top: 39px;
 		right: 0px;
 		padding: 8px;
